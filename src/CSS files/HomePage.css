@@ -1,0 +1,6 @@
+/* building for mobile and big tablets screens of sizes 768px, find media query in "index.html" file */
+
+.mobile-view-container {
+  width: 100vw;
+  height: 100vh;
+}

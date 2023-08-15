@@ -6,7 +6,15 @@
     <title>Anonymous</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="mobile"></div>
+    <style>
+      @media (min-width: 768px) {
+        /* Screens larger than 768px won't display */
+        #mobile {
+          display: none;
+        }
+      }
+    </style>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
