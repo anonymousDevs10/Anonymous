@@ -7,18 +7,21 @@ const Header = () => {
 
   return (
     <>
-      {/* {html goes} */}
-      <div className="w-full h-full overflow-hidden flex items-center justify-between">
-        <div className="logo-container w-[40%] h-full flex items-center - justify-center">
-          <img src={Logo} alt="logo" className="w-[100%] h-[100%]" />
+      <div className="w-full h-full overflow-hidden flex items-center justify-between px-3">
+        <div className="logo-container w-[40%] h-full flex items-center gap-3">
+          <img
+            src={Logo}
+            alt="logo"
+            className="w-[34px] h[34px] md:w-[60px] md:h-[60px]"
+          />
           <h1 className="text-white">Anonymous</h1>
         </div>
+
         <img
           src={User}
           alt="Userprofilepic"
           onClick={() => navigate("/Profilepage")}
-          // This onClick function will navigate to the settings page, please rewrite this function or don't delete it when redesigning this header section
-          className="cursor-pointer"
+          className="cursor-pointer md:w-[50px] md:h-[50px] "
         />
       </div>
     </>
