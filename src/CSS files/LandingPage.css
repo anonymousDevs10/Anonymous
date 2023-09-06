@@ -1,0 +1,113 @@
+.landing-body{
+  font-family: 'Lato', sans-serif ;
+  -webkit-user-select: none;
+  margin-top: 10%;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.landing-img{
+  width: 15%;
+  background-color: white;
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 5%;
+}
+.landing-header{
+  font-weight: lighter;
+  font-size: 140%;
+  margin: 0 0 1% 2%;
+}
+p.landing-page{
+  font-size: 105%;
+  line-height: none;
+  letter-spacing: none;
+  margin: 0 2% 0 2%;
+}
+.moving-objects-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  padding: 5% 0 3% 0;
+  margin: 10% 0 10% 0;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+.moving-objects {
+  display: flex;
+  width: max-content;
+  scroll-snap-type: x mandatory;
+}
+
+.object {
+  flex: 0 0 85%;
+  margin: 0 2.87%;
+  text-align: center;
+  scroll-snap-align: center;
+}
+.object img{
+  width: 100%;
+  height: 100%;
+}
+footer.landing-page{
+  text-align: center;
+}
+footer.landing-page p{
+  padding: 0 5% 0 5%;
+  font-size: 105%;
+}
+.landing-page button{
+  width: 30%;
+  height: 5vh;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.landing-page .signup-button{
+  background: #00ffff;
+  border: none;
+}
+  .landing-page .signup-button:active{
+  border: 2px solid #00ffff;
+  background: white;
+  color: #00ffff;
+  }
+.landing-page .login-button{
+  background: #ffffff;
+  border: 2px solid #00ffff;
+}
+  .landing-page .login-button:active{
+    background: #00ffff;
+    border: none;
+    color: white;
+    width: 28%;
+    height: 4.8vh;
+  }
+
+  
+  
+  /*=================
+    RESPONSIVE STYLES
+    =================*/
+  /*Mobile view*/ 
+@media screen and (min-width: 481px) and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px){
+
+}

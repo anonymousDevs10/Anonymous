@@ -1,0 +1,102 @@
+.login-body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  line-height: normal;
+}
+.login-logo{
+  width: 20%;
+  background: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+h1.login{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 150%;
+}
+.container-login{
+  transform: translateY(50%);
+}
+.form-login{
+    margin-top: 15%;
+}
+div.login-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.login-input input{
+  display: block;
+  border: 1.5px solid #000000;
+  margin-bottom: 20px;
+  padding: 9px;
+  width: 90%;
+}
+/*=====================
+  ANIMATING PLACEHOLDER
+  =====================*/
+div.login-input input:focus::placeholder{
+  font-weight: 100;
+  color: #000000;
+}
+
+p.privacy{
+    text-align: center;
+    font-size: 0.9rem;
+}
+button.login{
+  background: purple;
+  color: #00000f;
+  padding: 6px;
+  width: 70px;
+  height: 5%;
+  margin-top: 15px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+button.login{
+  cursor: pointer;
+  border: none;
+}
+button.login:active{
+  background: #6b38a7;
+  color: white;
+}
+.privacy{
+  font-size: 18px;
+}
+
+
+/*=================
+  RESPONSIVE STYLES
+  =================*/
+/*Mobile view*/
+@media screen and (max-width: 370px){
+  .container-login{
+    transform: translateY(20%);
+  }
+}
+
+@media screen and (min-width: 480px){
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px){
+
+}
