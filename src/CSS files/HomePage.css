@@ -4,3 +4,33 @@
   width: 100vw;
   height: 100vh;
 }
+
+.menu-tab {
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.299), 0 5px 5px rgba(0, 0, 0, 0.299),
+    -5px 0 5px rgba(0, 0, 0, 0.299), 0 -5px 5px rgba(0, 0, 0, 0.299);
+}
+
+.btn-style {
+  width: 80%;
+  background-color: black;
+  color: white;
+  padding: 2px 0 2px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.299), 0 2px 5px rgba(0, 0, 0, 0.299),
+    -2px 0 5px rgba(0, 0, 0, 0.299), 0 -2px 5px rgba(0, 0, 0, 0.299);
+  @apply md:w-[50%];
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in-out;
+}
