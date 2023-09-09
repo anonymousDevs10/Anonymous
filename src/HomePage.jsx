@@ -17,6 +17,7 @@ function HomePage() {
 
   // This variable controls the visibility of the menu.
   const [toggleMenu, setToggleMenu] = useState(false);
+  
 
   return (
     <>
