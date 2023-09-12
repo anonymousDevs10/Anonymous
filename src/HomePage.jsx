@@ -17,7 +17,6 @@ function HomePage() {
 
   // This variable controls the visibility of the menu.
   const [toggleMenu, setToggleMenu] = useState(false);
-  
 
   return (
     <>
@@ -29,7 +28,7 @@ function HomePage() {
         </div>
 
         {/* Container for each section */}
-        <div className="page-container w-full h-[92%] text-6xl flex items-center justify-center ">
+        <div className="page-container w-full h-[92%] ">
           {/* Conditional rendering of different sections based on the 'page' state */}
           {page === 0 && <Home />}
           {page === 1 && <Notification />}
