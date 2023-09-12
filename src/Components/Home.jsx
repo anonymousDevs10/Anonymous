@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Home.css";
 
 const Home = () => {
@@ -13,7 +13,6 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h2>Home</h2>
       {/*Ive set up the main thing its just the styling and adding the componentsyou need to do*/}
       {/*To get the username for the post content its posts.username, img is https://discreetnetsv.onrender.com/posts.img, profile picture is a link too*/}
       {/*https://blog.radware.com/wp-content/uploads/2020/06/anonymous.jpg this is profile picture,, caption is posts.caption */}
@@ -28,10 +27,29 @@ const Home = () => {
         </div>
       ))}*/}
 
-
       {/*
       For uploading Ill add that either after you've made the screen for it or after youre done with this
       */}
+
+      {posts.map((post) => (
+        <div key={post.id} className="post">
+          <div className="post-header">
+            <img
+              src="https://blog.radware.com/wp-content/uploads/2020/06/anonymous.jpg"
+              alt="Profile Pic"
+              className="profile-pic"
+            />
+            <h3>{post.username}</h3>
+          </div>
+          <img src={post.img} alt="Post Image" className="post-img" />
+          <p className="caption">{post.caption}</p>
+          <div className="post-actions">
+            <button>Like</button>
+            <button>Comment</button>
+            <button>Share</button>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
