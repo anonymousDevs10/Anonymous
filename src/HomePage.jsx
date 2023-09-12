@@ -28,7 +28,7 @@ function HomePage() {
         </div>
 
         {/* Container for each section */}
-        <div className="page-container w-full h-[92%] ">
+        <div className="page-container w-full h-[92%]  overflow-x-hidden ">
           {/* Conditional rendering of different sections based on the 'page' state */}
           {page === 0 && <Home />}
           {page === 1 && <Notification />}

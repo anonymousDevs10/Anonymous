@@ -41,7 +41,11 @@ const Home = () => {
             />
             <h3>{post.username}</h3>
           </div>
-          <img src={"https://discreetnetsv.onrender.com/" + post.img} alt="Post Image" className="post-img" />
+          <img
+            src={"https://discreetnetsv.onrender.com/" + post.img}
+            alt="Post Image"
+            className="post-img"
+          />
           <p className="caption">{post.caption}</p>
           <div className="post-actions">
             <button>Like</button>
