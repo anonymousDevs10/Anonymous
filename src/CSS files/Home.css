@@ -1,0 +1,15 @@
+.post-btn {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  font-size: 12px;
+}
+
+.loading-error {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

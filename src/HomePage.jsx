@@ -1,15 +1,14 @@
 import "./CSS files/HomePage.css";
-import {
-  Header,
-  Home,
-  Notification,
-  Search,
-  Messages,
-} from "./Components/CompExport";
-import { useState } from "react";
+import { Header, Home } from "./Components/CompExport";
+import { useState, lazy, Suspense } from "react";
 import { CSSTransition } from "react-transition-group";
 import { useSelector, useDispatch } from "react-redux";
 import { setPageSwitch } from "./Features/Actions";
+import { Loader } from "./Components/Home";
+
+const Notification = lazy(() => import("./Components/Notification"));
+const Search = lazy(() => import("./Components/Search"));
+const Messages = lazy(() => import("./Components/Messages"));
 
 function HomePage() {
   const dispatch = useDispatch();
@@ -30,10 +29,12 @@ function HomePage() {
         {/* Container for each section */}
         <div className="page-container w-full h-[92%]  overflow-x-hidden ">
           {/* Conditional rendering of different sections based on the 'page' state */}
-          {page === 0 && <Home />}
-          {page === 1 && <Notification />}
-          {page === 2 && <Search />}
-          {page === 3 && <Messages />}
+          <Suspense fallback={<Loader />}>
+            {page === 0 && <Home />}
+            {page === 1 && <Notification />}
+            {page === 2 && <Search />}
+            {page === 3 && <Messages />}
+          </Suspense>
         </div>
 
         {/* {Menu bar} */}
